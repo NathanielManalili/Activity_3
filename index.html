@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        .redText {
+            color: blue;
+            font-size: large;
+            background-color: aquamarine;
+        }
+        #buttonLogin {
+            color: blueviolet;
+        }
+        #buttonLogin:hover{
+            cursor: pointer;
+            background-color: antiquewhite;
+            font-size: large;
+        }
+        input{
+            margin: 1rem;
+        }
+    </style>
 </head>
 <body>
     <div style="text-align: center;">
         <h1>LogIn</h1>
-    <input type="text" placeholder="Username">
-    <input type="password" placeholder="Password">
+    <input type="text" placeholder="Username" class="redText" >
+    <input type="password" placeholder="Password" class="redText">
     <div style="margin-top: 1rem;">
         <button id="buttonLogin" onclick="alert('LogIn has been click')">Login</button>
     </div>
